@@ -41,12 +41,17 @@ def display_video(video_path):
 st.markdown(
     """
     <style>
-    .main {
+    body {
+        margin: 0;
+        background: none; 
+    }
+    .main-container {
         background-image: url('https://img.freepik.com/premium-vector/dynamic-gradient-football-background_1226107-217.jpg?semt=ais_hybrid');
         background-size: cover;
         background-repeat: no-repeat;
         padding: 50px;
         color: white;
+        border-radius: 10px;
     }
     .title {
         text-align: center;
@@ -55,10 +60,11 @@ st.markdown(
         font-family: 'Arial', sans-serif;
     }
     </style>
-    <div class="main">
-    <h1 class="title"> Football Analysis App</h1>
+    <div class="main-container">
+        <h1 class="title">Football Analysis App</h1>
     </div>
     """, unsafe_allow_html=True)
+
 
 uploaded_file = st.file_uploader("Upload a video", type=["mp4", "avi"])
 
