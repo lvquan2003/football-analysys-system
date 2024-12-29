@@ -6,7 +6,6 @@ class TeamAssigner:
         self.player_team_dict = {}
     
     def get_clustering_model(self,image):
-        # Reshape the image to 2D array
         image_2d = image.reshape(-1,3)
 
         kmeans = KMeans(n_clusters=2, init="k-means++",n_init=1)
@@ -22,10 +21,8 @@ class TeamAssigner:
         # Get Clustering model
         kmeans = self.get_clustering_model(top_half_image)
 
-        # Get the cluster labels forr each pixel
         labels = kmeans.labels_
 
-        # Reshape the labels to the image shape
         clustered_image = labels.reshape(top_half_image.shape[0],top_half_image.shape[1])
 
         # Get the player cluster
