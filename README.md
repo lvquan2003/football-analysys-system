@@ -34,4 +34,4 @@ Finally, run app with streamlit:
 streamlit run app.py
 ```
 
-*Note: need to tick in clear stub checkbox before running other videos (It has the effect of increasing the prediction speed for previously predicted videos so don't need if we predict other videos)*
+*Note: need to **tick in clear stub checkbox before running other videos**( (It has the effect of increasing the prediction speed for previously predicted videos so don't need if we predict other videos)*
