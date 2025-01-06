@@ -35,3 +35,7 @@ streamlit run app.py
 ```
 
 *Note: need to **tick in clear stub checkbox before running other videos**( (It has the effect of increasing the prediction speed for previously predicted videos so don't need if we predict other videos)*
+
+To speed up the prediction process, you can provide the input video, output video, and the stub files here: [https://drive.google.com/drive/folders/1rBiXgezcRMo_7xAlnhaHeL5Q23FxpwaV?usp=sharing].
+
+Please copy the stub files of the video into the corresponding folder ("stubs") to load them faster. This will reduce the processing time for videos that have already been predicted.
